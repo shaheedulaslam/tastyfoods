@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.dribbble.com/users/5843340/screenshots/15406621/bingo_eat2-01_4x.png">
+</head>
+<body>
+    <!-------navbar------->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="#">Tasty Foods</a>
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-dark fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#order">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#location">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search...</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!---------- section 1 carosal--------->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/lunch.jpg" class="slide d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/breakfast.jpg" class="slide d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/dinner.jpeg" class="slide d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+    <!---------section3 ordr-------->
+    
+    <div class="container" id="order">
+      <h1 class="text-center fw-bold">Order Your Food Now..</h1>
+      <div class="row">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem; height: 25rem;">
+            <img src="https://vismaifood.com/storage/app/uploads/public/e12/7b7/127/thumb__700_0_0_0_auto.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="work">
+              <h5 class="card-title">Chicken Biriyani</h5>
+              <p class="card-text">Tasty Chicken Biriyani</p>
+              <h5 class="card-title text-danger">Rs: 199.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem;height: 25rem;">
+            <img src="https://i0.wp.com/cookingfromheart.com/wp-content/uploads/2017/09/Veg-Biryani-in-Pressure-Cooker-6.jpg?resize=720%2C480&ssl=1" class="card-img-top" alt="..">
+            <div class="card-body" id="work">
+              <h5 class="card-title">Vegetable Biriyani</h5>
+              <p class="card-text">Tasty vegetable Biriyani</p>
+              <h5 class="card-title text-danger">Rs: 179.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem;height: 25rem;">
+            <img src="https://www.chefkunalkapur.com/wp-content/uploads/2021/03/egg-biryani-1-scaled.jpeg?v=1625193642" class="card-img-top" alt="...">
+            <div class="card-body" id="work">
+              <h5 class="card-title">Egg Biriyani</h5>
+              <p class="card-text">Tasty Egg Biriyani</p>
+              <h5 class="card-title text-danger">Rs: 159.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row my-3">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem;height: 25rem;">
+            <img src="https://t3.ftcdn.net/jpg/03/24/50/54/360_F_324505480_RTE4AmVPsYP96f99g88gEwabe65mSvak.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="work">
+              <h5 class="card-title">Chicken Mandhi</h5>
+              <p class="card-text">Tasty Chicken Mandhi</p>
+              <h5 class="card-title text-danger">Rs: 230.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem;height: 25rem;">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dhaudcivoqnomdricqlb" class="card-img-top" alt="...">
+            <div class="card-body" id="work">
+              <h5 class="card-title">Alfaham Mandhi</h5>
+              <p class="card-text">Tasty Alfaham Mandhi</p>
+              <h5 class="card-title text-danger">Rs: 250.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card text-center border-2 border-warning mb-2" style="width: 18rem;height: 25rem;">
+            <img src="https://i.ytimg.com/vi/FdNcSQ7XvsE/maxresdefault.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Beef Mandhi</h5>
+              <p class="card-text">Tasty Beef Mandhi</p>
+              <h5 class="card-title text-danger">Rs: 230.00</h5>
+              <a href="#" class="btn btn-danger" onclick="myfunction()">Order now</a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  <!--------sub---------->
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center fw-bold text-danger">Hurry Up....! Get 25% Off On Your First Order..</h2>
+    </div>
+  </div>
+
+    <!--------footer------------>
+    <div class="container-fluid bg-warning">
+      <div class="row">
+        <div class="col-6">
+          <h2 class="text-white">Tasty Foods Restaurant</h2>
+          <h4>Calicut</h4>
+          <h4>Kerala</h4>
+          <h4>Ph: 0483 2706234</h4><br>
+          <a href="shaheedulaslam061@gmail.com" class="text-dark">Email:tastyfoods@gmail.com</a><br>
+          <a href="index.html" class="text-dark">www.tastyfoods.com</a>
+
+        </div>
+        <div class="col-6 overflow-hidden text">
+          <h1 id="location">Location</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.174936930491!2d75.83139681414237!3d11.248538253379085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65bbe359ced81%3A0xc17c381f72b87e02!2sHiLITE%20Mall!5e0!3m2!1sen!2sin!4v1665714965861!5m2!1sen!2sin" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="script.js">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
